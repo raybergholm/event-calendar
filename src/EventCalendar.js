@@ -25,7 +25,7 @@ export const formatEvents = (input) => {
             title: entry.name,
             desc: entry.description,
             start: formatDate(entry.start_time),
-            end: formatDate(entry.start_time)
+            end: formatDate(entry.end_time)
         };
     });
 };

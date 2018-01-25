@@ -6,7 +6,7 @@ import endpoint from "./endpointConfig";
 
 const eventsInterface = {
     fetchEvents: () => {
-        return JSON.parse(eventsJson);
+        return eventsJson;
     }
 };
 
