@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
-import EventCalendar, { formatEvents } from "./EventCalendar";
+
+import EventCalendar, { formatEvents } from "./calendar/EventCalendar";
 
 import eventsInterface from "./interface/eventsInterface";
 
