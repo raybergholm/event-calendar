@@ -1,10 +1,14 @@
 import React from "react";
 import "./App.css";
-import EventCalendar from "./EventCalendar";
+import EventCalendar, { formatEvents } from "./EventCalendar";
 
 import eventsInterface from "./interface/eventsInterface";
 
-const events = eventsInterface.fetchEvents();
+let events;
+const rawEvents = eventsInterface.fetchEvents();
+if(rawEvents){
+    events = formatEvents(rawEvents);
+}
 
 const App = () => (
     <EventCalendar 
