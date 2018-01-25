@@ -13,17 +13,19 @@ BigCalendar.setLocalizer(
     BigCalendar.momentLocalizer(moment)
 );
 
-const EventCalendar = ({events}) => (
-    <BigCalendar
-        events={events}
-        defaultDate={new Date()}
-        showMultiDayTimes={true}
-        components= {{
-            agenda: {
-                event: AgendaEvent
-            }
-        }}
-    />
+const EventCalendar = ({ events }) => (
+    <div className="calendar-wrapper">
+        <BigCalendar
+            events={events}
+            defaultDate={new Date()}
+            showMultiDayTimes={true}
+            components= {{
+                agenda: {
+                    event: AgendaEvent
+                }
+            }}
+        />
+    </div>
 );
 
 export const formatEvents = (input) => {
