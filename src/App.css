@@ -23,10 +23,14 @@
 }
 
 .calendar-wrapper {
-    min-height: 800px;
-    height: 800px;
+    min-height: 580px;
+    height: 1000px;
     width: 80%;
     margin: 0 auto;
+}
+
+.month-event {
+    min-height: 3rem;
 }
 
 @keyframes App-logo-spin {

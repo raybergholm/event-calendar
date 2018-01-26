@@ -3,7 +3,8 @@ import BigCalendar from "react-big-calendar";
 
 import "react-big-calendar/lib/css/react-big-calendar.css";
 
-import AgendaEvent from "./AgendaEvent";
+import MonthViewEvent from "./MonthViewEvent";
+import AgendaViewEvent from "./AgendaViewEvent";
 
 import moment from "moment";
 
@@ -20,8 +21,11 @@ const EventCalendar = ({ events }) => (
             defaultDate={new Date()}
             showMultiDayTimes={true}
             components= {{
+                month: {
+                    event: MonthViewEvent
+                },
                 agenda: {
-                    event: AgendaEvent
+                    event: AgendaViewEvent
                 }
             }}
         />
@@ -43,7 +47,7 @@ export const formatEvents = (input) => {
             end: formatDate(entry.end_time),
             description: entry.description,
             place: entry.place,
-
+            analysis: entry._bh
         };
     });
 };
