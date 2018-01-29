@@ -1,4 +1,5 @@
-"use strict";
+export const startOfDay = "00:00:00";
+export const endOfDay = "23:59:59"; 
 
 export const parseTimezoneOffset = (dateTimeString) => {
     let gmtRegex = /Z$/;
@@ -25,4 +26,8 @@ export const parseTimezoneOffset = (dateTimeString) => {
 
 export const correctTimezoneOffset = (momentDateTime, offset) => {
     return momentDateTime.clone().add(offset.hours, "hours").add(offset.minutes, "minutes");
+};
+
+export const buildTimestamp = (date, time, timezone = "+0200") => {
+    return `${date}T${time}${timezone}`;
 };

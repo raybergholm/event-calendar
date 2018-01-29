@@ -5,8 +5,7 @@
     "season": {
         "start": "2018-01-15",
         "end": "2018-05-09",
-        "courses": [
-            {
+        "courses": [{
                 "name": "Salsa Novice (Etelä-Haaga)",
                 "level": "Novice",
                 "tags": ["Salsa"],
@@ -17,7 +16,7 @@
                         "start": "18:00",
                         "duration": "90"
                     },
-                    "except": [] 
+                    "except": []
                 }
             },
             {
@@ -31,7 +30,7 @@
                         "start": "18:00",
                         "duration": "90"
                     },
-                    "except": [] 
+                    "except": []
                 }
             },
             {
@@ -45,7 +44,7 @@
                         "start": "19:30",
                         "duration": "90"
                     },
-                    "except": [] 
+                    "except": []
                 }
             },
             {
@@ -59,7 +58,7 @@
                         "start": "19:30",
                         "duration": "90"
                     },
-                    "except": [] 
+                    "except": []
                 }
             },
             {
@@ -73,7 +72,7 @@
                         "start": "19:00",
                         "duration": "120"
                     },
-                    "except": ["2018-03-05", "2018-04-30"] 
+                    "except": ["2018-03-05", "2018-04-30"]
                 }
             },
             {
@@ -87,7 +86,7 @@
                         "start": "19:00",
                         "duration": "120"
                     },
-                    "except": ["2018-05-01"] 
+                    "except": ["2018-05-01"]
                 }
             },
             {
@@ -101,7 +100,7 @@
                         "start": "18:00",
                         "duration": "60"
                     },
-                    "except": ["2018-05-01"] 
+                    "except": ["2018-05-01"]
                 }
             },
             {
@@ -115,7 +114,7 @@
                         "start": "18:00",
                         "duration": "60"
                     },
-                    "except": ["2018-03-05", "2018-04-30"] 
+                    "except": ["2018-03-05", "2018-04-30"]
                 }
             },
             {
@@ -143,7 +142,7 @@
                         "start": "16:00",
                         "duration": "75"
                     },
-                    "except": [] 
+                    "except": []
                 }
             },
             {
@@ -157,7 +156,7 @@
                         "start": "17:15",
                         "duration": "75"
                     },
-                    "except": [] 
+                    "except": []
                 }
             }
         ]

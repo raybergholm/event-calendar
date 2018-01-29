@@ -9,6 +9,8 @@ import hsa from "../data/hsa.json";
 import School from "../template/School";
 import Schedule from "../template/Schedule";
 
+import moment from "moment";
+
 // import endpoint from "./endpointConfig"; // TODO: do this later
 
 const dataInterface = {
@@ -45,6 +47,15 @@ function importData() {
 
 function generateSchedule(schools) {
     return null;
+}
+
+function buildEventsList(schools) {
+    schools.forEach((school) => {
+        let startDate = school.season.start;
+        let endDate = school.season.end;
+
+        
+    });
 }
 
 export default dataInterface;

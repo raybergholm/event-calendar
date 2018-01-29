@@ -8,7 +8,7 @@ import AgendaViewEvent from "./AgendaViewEvent";
 
 import moment from "moment";
 
-import { parseTimezoneOffset, correctTimezoneOffset } from "../utils/utils";
+import { parseTimezoneOffset, correctTimezoneOffset } from "../utils/dateTimeUtils";
 
 BigCalendar.setLocalizer(
     BigCalendar.momentLocalizer(moment)
