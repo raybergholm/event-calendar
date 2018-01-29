@@ -4,8 +4,12 @@ const Course = (data = null) => {
     if (data) {
         return {
             name: data.name || null,
+            level: data.level || null,
+            tags: data.tags || null,
             location: data.location || null,
-            schedule: new Schedule(data.schedule || null)
+            teacher: data.teacher || null,
+            url: data.url || null,
+            schedule: data.schedule || null
         };
     } else {
         return null;

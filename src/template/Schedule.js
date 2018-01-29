@@ -2,13 +2,19 @@ import Course from "./Course";
 
 const Schedule = (data = null) => {
     let schedule = {
-        mon: null,
-        tue: null,
-        wed: null,
-        thu: null,
-        fri: null,
-        sat: null,
-        sun: null
+        mon: [],
+        tue: [],
+        wed: [],
+        thu: [],
+        fri: [],
+        sat: [],
+        sun: [],
+
+        addEvent: function(entry) {
+            if(entry.day && entry.payload){
+                this[entry.day].push(entry.payload);
+            }
+        }
     };
 
     const occurrenceParser = (courseSchedule) => {
@@ -16,15 +22,10 @@ const Schedule = (data = null) => {
 
         });
     };
-
-    if (data instanceof Array) {
-        data.forEach((course) => {
-            if(course.schedule){
-                occurrenceParser(course.schedule);
-            }
+    if (data && data instanceof Array) {
+        data.forEach((season) => {
+            
         });
-    }else if(typeof data === "object"){
-        occurrenceParser(data);
     }
 
     return schedule;
