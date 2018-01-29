@@ -1,0 +1,35 @@
+[
+    {
+        "schoolName": "",
+        "websiteUrl": "",
+        "location": "",
+        "season": [{
+            "start": "",
+            "end": "",
+            "courses": [],
+            "schedule": {
+                "mon": [
+
+                ],
+                "tue": [
+
+                ],
+                "wed": [
+                    
+                ],
+                "thu": [
+                    
+                ],
+                "fri": [
+                    
+                ],
+                "sat": [
+                    
+                ],
+                "sun": [
+                    
+                ]
+            }
+        }]
+    }
+]
