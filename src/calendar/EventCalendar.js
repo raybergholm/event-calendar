@@ -8,7 +8,7 @@ import AgendaViewEvent from "./AgendaViewEvent";
 
 import moment from "moment";
 
-import { parseTimezoneOffset, correctTimezoneOffset } from "../utils/dateTimeUtils";
+import { correctTimezoneOffset } from "../utils/dateTimeUtils";
 
 BigCalendar.setLocalizer(
     BigCalendar.momentLocalizer(moment)
@@ -34,9 +34,7 @@ const EventCalendar = ({ events }) => (
 
 export const formatEvents = (input) => {
     const formatDate = (inputDate) => {
-        let offset = parseTimezoneOffset(inputDate);
-        let formattedDate = correctTimezoneOffset(moment(inputDate), offset);
-        return formattedDate.toDate();
+        return correctTimezoneOffset(inputDate).toDate();
     };
 
     return input.map((entry) => {
