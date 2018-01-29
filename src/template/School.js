@@ -10,7 +10,7 @@ const School = (data = null) => {
         };
     } else {
         return null;
-    };
+    }
 
 };
 

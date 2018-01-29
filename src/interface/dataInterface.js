@@ -2,10 +2,9 @@ import mockEvents from "../mock/mockEvents";
 
 import eventsJson from "../mock/events.json";
 
+// import bailaBaila from "../data/bailabaila.json";
 
-// import bailaBaila from "./bailabaila.json";
-
-import hsa from "./hsa.json";
+import hsa from "../data/hsa.json";
 
 import School from "../template/School";
 import Schedule from "../template/Schedule";
