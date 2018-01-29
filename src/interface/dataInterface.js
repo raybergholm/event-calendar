@@ -1,3 +1,8 @@
+import mockEvents from "../mock/mockEvents";
+
+import eventsJson from "../mock/events.json";
+
+
 // import bailaBaila from "./bailabaila.json";
 
 import hsa from "./hsa.json";
@@ -5,9 +10,21 @@ import hsa from "./hsa.json";
 import School from "../template/School";
 import Schedule from "../template/Schedule";
 
-const DataLoader = () => {
-    let schools = importData();
+// import endpoint from "./endpointConfig"; // TODO: do this later
 
+const dataInterface = {
+    fetchEvents: () => {
+        let data = loadData();
+
+        console.log("loaded data:", data);
+
+        return eventsJson;
+    }
+};
+
+
+function loadData (){
+    let schools = importData();
 
     let schedule = generateSchedule(schools);
 
@@ -15,7 +32,7 @@ const DataLoader = () => {
         schools: schools,
         schedule: schedule
     };
-};
+}
 
 function importData() {
     let data = [];
@@ -31,4 +48,4 @@ function generateSchedule(schools) {
     return null;
 }
 
-export default DataLoader;
+export default dataInterface;

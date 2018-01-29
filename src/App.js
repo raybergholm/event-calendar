@@ -3,10 +3,10 @@ import "./App.css";
 
 import EventCalendar, { formatEvents } from "./calendar/EventCalendar";
 
-import eventsInterface from "./interface/eventsInterface";
+import dataInterface from "./interface/dataInterface";
 
 let events;
-const rawEvents = eventsInterface.fetchEvents();
+const rawEvents = dataInterface.fetchEvents();
 if(rawEvents){
     events = formatEvents(rawEvents);
 }
