@@ -14,8 +14,7 @@ import moment from "moment";
 // JSON files
 import hsaSpring2018 from "../data/hsa_spring_2018.json";
 import hdcSpring2018 from "../data/hdc_spring_2018.json";
-import sl01_03_2018 from "../data/hdc_spring_2018.json";
-
+import sl01_03_2018 from "../data/salsalatina_01-03_2018.json";
 
 const data = [
     hsaSpring2018,
