@@ -1,0 +1,258 @@
+{
+    "schoolName": "Salsa Latina",
+    "websiteUrl": "http://www.salsa-latina.fi",
+    "location": "Katajanokanlaituri 5",
+    "courses": [{
+            "name": "Couple Salsa LA-Style",
+            "level": "Novice",
+            "tags": ["Salsa"],
+            "location": "Katajanokanlaituri 5",
+            "teacher": "Patricio & Noora",
+            "schedule": {
+                "start": "2018-01-08",
+                "end": "2018-03-31",
+                "days": {
+                    "mon": {
+                        "start": "18:00",
+                        "duration": "60"
+                    }
+                },
+                "except": []
+            }
+        },
+        {
+            "name": "Couple Salsa LA-Style",
+            "level": "Improver",
+            "tags": ["Salsa"],
+            "location": "Katajanokanlaituri 5",
+            "teacher": "Patricio & Noora",
+            "schedule": {
+                "start": "2018-01-08",
+                "end": "2018-03-31",
+                "days": {
+                    "mon": {
+                        "start": "19:00",
+                        "duration": "60"
+                    }
+                },
+                "except": []
+            }
+        },
+        {
+            "name": "Couple Sensual Bachata",
+            "level": "Improver",
+            "tags": ["Salsa"],
+            "location": "Katajanokanlaituri 5",
+            "teacher": "Patricio & Noora",
+            "schedule": {
+                "start": "2018-01-08",
+                "end": "2018-03-31",
+                "days": {
+                    "mon": {
+                        "start": "20:00",
+                        "duration": "90"
+                    }
+                },
+                "except": []
+            }
+        },
+        {
+            "name": "Rueda de Casino, Cuban Style",
+            "level": "Improver",
+            "tags": ["Casino"],
+            "location": "Katajanokanlaituri 5",
+            "teacher": "Patricio & Noora",
+            "schedule": {
+                "start": "2018-01-08",
+                "end": "2018-03-31",
+                "days": {
+                    "tue": {
+                        "start": "18:00",
+                        "duration": "60"
+                    }
+                },
+                "except": []
+            }
+        },
+        {
+            "name": "Couple Salsa LA-Style",
+            "level": "Beginner",
+            "tags": ["Salsa"],
+            "location": "Katajanokanlaituri 5",
+            "teacher": "Patricio & Noora",
+            "schedule": {
+                "start": "2018-01-08",
+                "end": "2018-03-31",
+                "days": {
+                    "tue": {
+                        "start": "19:00",
+                        "duration": "60"
+                    }
+                },
+                "except": []
+            }
+        },
+        {
+            "name": "Bachata Ladies Styling",
+            "level": "Open",
+            "tags": ["Bachata", "Ladies' Styling", "Solo"],
+            "location": "Katajanokanlaituri 5",
+            "teacher": "Noora",
+            "schedule": {
+                "start": "2018-01-08",
+                "end": "2018-03-31",
+                "days": {
+                    "tue": {
+                        "start": "20:00",
+                        "duration": "90"
+                    }
+                },
+                "except": []
+            }
+        },
+        {
+            "name": "Couple Sensual Bachata",
+            "level": "Novice",
+            "tags": ["Bachata"],
+            "location": "Katajanokanlaituri 5",
+            "teacher": "Patricio & Noora",
+            "schedule": {
+                "start": "2018-01-08",
+                "end": "2018-03-31",
+                "days": {
+                    "wed": {
+                        "start": "18:00",
+                        "duration": "60"
+                    }
+                },
+                "except": []
+            }
+        },
+        {
+            "name": "Bachata Technique & Footwork",
+            "level": "Open",
+            "tags": ["Bachata", "Technique", "Solo"],
+            "location": "Katajanokanlaituri 5",
+            "teacher": "Patricio & Noora",
+            "schedule": {
+                "start": "2018-01-08",
+                "end": "2018-03-31",
+                "days": {
+                    "wed": {
+                        "start": "19:00",
+                        "duration": "60"
+                    }
+                },
+                "except": []
+            }
+        },
+        {
+            "name": "Couple Sensual Bachata",
+            "level": "Improver",
+            "tags": ["Bachata"],
+            "location": "Katajanokanlaituri 5",
+            "teacher": "Patricio & Noora",
+            "schedule": {
+                "start": "2018-01-08",
+                "end": "2018-03-31",
+                "days": {
+                    "wed": {
+                        "start": "20:00",
+                        "duration": "90"
+                    }
+                },
+                "except": []
+            }
+        },
+        {
+            "name": "Salsa Ladies Styling & Footwork",
+            "level": "Open",
+            "tags": ["Salsa", "Ladies' Styling", "Solo"],
+            "location": "Katajanokanlaituri 5",
+            "teacher": "Noora",
+            "schedule": {
+                "start": "2018-01-08",
+                "end": "2018-03-31",
+                "days": {
+                    "thu": {
+                        "start": "18:00",
+                        "duration": "60"
+                    }
+                },
+                "except": []
+            }
+        },
+        {
+            "name": "Couple Salsa LA-Style",
+            "level": "Improver",
+            "tags": ["Salsa"],
+            "location": "Katajanokanlaituri 5",
+            "teacher": "Patricio & Noora",
+            "schedule": {
+                "start": "2018-01-08",
+                "end": "2018-03-31",
+                "days": {
+                    "thu": {
+                        "start": "19:00",
+                        "duration": "60"
+                    }
+                },
+                "except": []
+            }
+        },
+        {
+            "name": "Bachata Choreography",
+            "level": "Improver",
+            "tags": ["Bachata"],
+            "location": "Katajanokanlaituri 5",
+            "teacher": "Patricio & Noora",
+            "schedule": {
+                "start": "2018-01-08",
+                "end": "2018-03-31",
+                "days": {
+                    "thu": {
+                        "start": "20:00",
+                        "duration": "90"
+                    }
+                },
+                "except": []
+            }
+        },
+        {
+            "name": "Couple Sensual Bachata Technique & Social Dancing movements",
+            "level": "Improver",
+            "tags": ["Bachata"],
+            "location": "Katajanokanlaituri 5",
+            "teacher": "Patricio & Noora",
+            "schedule": {
+                "start": "2018-01-08",
+                "end": "2018-03-31",
+                "days": {
+                    "fri": {
+                        "start": "19:00",
+                        "duration": "90"
+                    }
+                },
+                "except": []
+            }
+        },
+        {
+            "name": "Couple Urban Kizomba",
+            "level": "Improver",
+            "tags": ["Kizomba"],
+            "location": "Katajanokanlaituri 5",
+            "teacher": "Patricio & Noora",
+            "schedule": {
+                "start": "2018-01-08",
+                "end": "2018-03-31",
+                "days": {
+                    "sat": {
+                        "start": "14:00",
+                        "duration": "90"
+                    }
+                },
+                "except": []
+            }
+        }
+    ]
+}

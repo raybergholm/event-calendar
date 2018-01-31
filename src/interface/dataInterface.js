@@ -2,9 +2,7 @@ import mockEvents from "../mock/mockEvents";
 
 import eventsJson from "../mock/events.json";
 
-// import bailaBaila from "../data/bailabaila.json";
 
-import hsa from "../data/hsa.json";
 
 import School from "../template/School";
 import Schedule from "../template/Schedule";
@@ -13,9 +11,16 @@ import moment from "moment";
 
 // import endpoint from "./endpointConfig"; // TODO: do this later
 
+// JSON files
+import hsaSpring2018 from "../data/hsa_spring_2018.json";
+import hdcSpring2018 from "../data/hdc_spring_2018.json";
+import sl01_03_2018 from "../data/hdc_spring_2018.json";
+
+
 const data = [
-    // bailaBaila,
-    hsa
+    hsaSpring2018,
+    hdcSpring2018,
+    sl01_03_2018
 ];
 
 const dataInterface = {

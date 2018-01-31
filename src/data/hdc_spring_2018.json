@@ -1,0 +1,104 @@
+{
+    "schoolName": "Helsinki Dance Central",
+    "websiteUrl": "www.helsinkidancecentral.com",
+    "location": "Sörnäisten Rantatie 33 C",
+    "courses": [{
+            "name": "Brazilian Zouk Fundamentals",
+            "level": "Beginner",
+            "tags": ["Zouk"],
+            "location": "Sörnäisten Rantatie 33 C",
+            "teacher": "Freddy & Andressa",
+            "schedule": {
+                "start": "2018-02-05",
+                "end": "2018-05-28",
+                "days": {
+                    "mon": {
+                        "start": "17:30",
+                        "duration": "90"
+                    }
+                },
+                "except": []
+            }
+        },
+        {
+            "name": "Brazilian Zouk Fundamentals",
+            "level": "Beginner",
+            "tags": ["Zouk"],
+            "location": "Sörnäisten Rantatie 33 C",
+            "teacher": "Jukka & Sonja",
+            "schedule": {
+                "start": "2018-02-07",
+                "end": "2018-05-30",
+                "days": {
+                    "wed": {
+                        "start": "18:00",
+                        "duration": "90"
+                    }
+                },
+                "except": []
+            }
+        },
+        {
+            "name": "Brazilian Zouk Improver",
+            "level": "Improver",
+            "tags": ["Zouk"],
+            "location": "Sörnäisten Rantatie 33 C",
+            "teacher": "Freddy & Andressa",
+            "schedule": {
+                "start": "2018-02-01",
+                "end": "2018-05-24",
+                "days": {
+                    "tue": {
+                        "start": "19:00",
+                        "duration": "60"
+                    },
+                    "thu": {
+                        "start": "19:00",
+                        "duration": "60"
+                    }
+                },
+                "except": []
+            }
+        },
+        {
+            "name": "Brazilian Zouk Intermediate",
+            "level": "Intermediate",
+            "tags": ["Zouk"],
+            "location": "Sörnäisten Rantatie 33 C",
+            "teacher": "Freddy & Andressa",
+            "schedule": {
+                "start": "2018-02-01",
+                "end": "2018-05-24",
+                "days": {
+                    "tue": {
+                        "start": "20:00",
+                        "duration": "60"
+                    },
+                    "thu": {
+                        "start": "20:00",
+                        "duration": "60"
+                    }
+                },
+                "except": []
+            }
+        },
+        {
+            "name": "Brazilian Zouk Advanced",
+            "level": "Advanced",
+            "tags": ["Zouk"],
+            "location": "Sörnäisten Rantatie 33 C",
+            "teacher": "Freddy & Andressa",
+            "schedule": {
+                "start": "2018-02-07",
+                "end": "2018-05-30",
+                "days": {
+                    "wed": {
+                        "start": "20:00",
+                        "duration": "90"
+                    }
+                },
+                "except": []
+            }
+        }
+    ]
+}
