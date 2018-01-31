@@ -9,7 +9,7 @@ const Course = (data = null) => {
             location: data.location || null,
             teacher: data.teacher || null,
             url: data.url || null,
-            schedule: data.schedule || null
+            schedule: data.schedule ? new Schedule(data.schedule) : null
         };
     } else {
         return null;

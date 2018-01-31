@@ -1,34 +1,20 @@
-import Course from "./Course";
+import {
+    buildTimestamp,
+    startOfDay,
+    endOfDay
+} from "../utils/dateTimeUtils";
 
 const Schedule = (data = null) => {
-    let schedule = {
-        mon: [],
-        tue: [],
-        wed: [],
-        thu: [],
-        fri: [],
-        sat: [],
-        sun: [],
-
-        addEvent: function(entry) {
-            if(entry.day && entry.payload){
-                this[entry.day].push(entry.payload);
-            }
-        }
-    };
-
-    const occurrenceParser = (courseSchedule) => {
-        courseSchedule.forEach((occurrence) => {
-
-        });
-    };
-    if (data && data instanceof Array) {
-        data.forEach((season) => {
-            
-        });
+    if (data) {
+        return {
+            start: data.start ? buildTimestamp(data.start, startOfDay) : null,
+            end: data.start ? buildTimestamp(data.end, endOfDay) : null,
+            days: data.days || {},
+            except: data.except || [],
+        };
+    } else {
+        return null;
     }
-
-    return schedule;
 };
 
 export default Schedule;

@@ -2,163 +2,203 @@
     "schoolName": "Helsinki Salsa Academy",
     "websiteUrl": "www.helsinkisalsaacademy.com",
     "location": "Isonnevantie 16 B, Helsinki",
-    "season": {
-        "start": "2018-01-15",
-        "end": "2018-05-09",
-        "courses": [{
-                "name": "Salsa Novice (Etelä-Haaga)",
-                "level": "Novice",
-                "tags": ["Salsa"],
-                "location": "Isonnevantie 16 B, Helsinki",
-                "teacher": "",
-                "schedule": {
+    "courses": [{
+            "name": "Salsa Novice (Etelä-Haaga)",
+            "level": "Novice",
+            "tags": ["Salsa"],
+            "location": "Isonnevantie 16 B, Helsinki",
+            "teacher": "",
+            "schedule": {
+                "start": "2018-01-17",
+                "end": "2018-05-09",
+                "days": {
                     "wed": {
                         "start": "18:00",
                         "duration": "90"
-                    },
-                    "except": []
-                }
-            },
-            {
-                "name": "Salsa Novice (Lauttasaari)",
-                "level": "Novice",
-                "tags": ["Salsa"],
-                "location": "Heikkiläntie 10, Helsinki",
-                "teacher": "",
-                "schedule": {
+                    }
+                },
+                "except": []
+            }
+        },
+        {
+            "name": "Salsa Novice (Lauttasaari)",
+            "level": "Novice",
+            "tags": ["Salsa"],
+            "location": "Heikkiläntie 10, Helsinki",
+            "teacher": "",
+            "schedule": {
+                "start": "2018-01-18",
+                "end": "2018-05-03",
+                "days": {
                     "thu": {
                         "start": "18:00",
                         "duration": "90"
-                    },
-                    "except": []
-                }
-            },
-            {
-                "name": "Salsa Beginner (Etelä-Haaga)",
-                "level": "Beginner",
-                "tags": ["Salsa"],
-                "location": "Isonnevantie 16 B, Helsinki",
-                "teacher": "",
-                "schedule": {
+                    }
+                },
+                "except": []
+            }
+        },
+        {
+            "name": "Salsa Beginner (Etelä-Haaga)",
+            "level": "Beginner",
+            "tags": ["Salsa"],
+            "location": "Isonnevantie 16 B, Helsinki",
+            "teacher": "",
+            "schedule": {
+                "start": "2018-01-17",
+                "end": "2018-05-09",
+                "days": {
                     "wed": {
                         "start": "19:30",
                         "duration": "90"
-                    },
-                    "except": []
-                }
-            },
-            {
-                "name": "Salsa Beginner (Lauttasaari)",
-                "level": "Beginner",
-                "tags": ["Salsa"],
-                "location": "Heikkiläntie 10, Helsinki",
-                "teacher": "",
-                "schedule": {
+                    }
+                },
+                "except": []
+            }
+        },
+        {
+            "name": "Salsa Beginner (Lauttasaari)",
+            "level": "Beginner",
+            "tags": ["Salsa"],
+            "location": "Heikkiläntie 10, Helsinki",
+            "teacher": "",
+            "schedule": {
+                "start": "2018-01-18",
+                "end": "2018-05-03",
+                "days": {
                     "thu": {
                         "start": "19:30",
                         "duration": "90"
-                    },
-                    "except": []
-                }
-            },
-            {
-                "name": "Salsa Improver",
-                "level": "Improver",
-                "tags": ["Salsa"],
-                "location": "Isonnevantie 16 B, Helsinki",
-                "teacher": "",
-                "schedule": {
+                    }
+                },
+                "except": []
+            }
+        },
+        {
+            "name": "Salsa Improver",
+            "level": "Improver",
+            "tags": ["Salsa"],
+            "location": "Isonnevantie 16 B, Helsinki",
+            "teacher": "",
+            "schedule": {
+                "start": "2018-01-15",
+                "end": "2018-05-07",
+                "days": {
                     "wed": {
                         "start": "19:00",
                         "duration": "120"
-                    },
-                    "except": ["2018-03-05", "2018-04-30"]
-                }
-            },
-            {
-                "name": "Salsa Advanced",
-                "level": "Advanced",
-                "tags": ["Salsa"],
-                "location": "Isonnevantie 16 B, Helsinki",
-                "teacher": "",
-                "schedule": {
+                    }
+                },
+                "except": ["2018-03-05", "2018-04-30"]
+            }
+        },
+        {
+            "name": "Salsa Advanced",
+            "level": "Advanced",
+            "tags": ["Salsa"],
+            "location": "Isonnevantie 16 B, Helsinki",
+            "teacher": "",
+            "schedule": {
+                "start": "2018-01-16",
+                "end": "2018-05-08",
+                "days": {
                     "tue": {
                         "start": "19:00",
                         "duration": "120"
-                    },
-                    "except": ["2018-05-01"]
-                }
-            },
-            {
-                "name": "Latin Technique",
-                "level": "Open",
-                "tags": ["Salsa", "Styling"],
-                "location": "Isonnevantie 16 B, Helsinki",
-                "teacher": "Mikko Kemppe",
-                "schedule": {
+                    }
+                },
+                "except": ["2018-05-01"]
+            }
+        },
+        {
+            "name": "Latin Technique",
+            "level": "Open",
+            "tags": ["Salsa", "Styling"],
+            "location": "Isonnevantie 16 B, Helsinki",
+            "teacher": "Mikko Kemppe",
+            "schedule": {
+                "start": "2018-01-16",
+                "end": "2018-05-08",
+                "days": {
                     "tue": {
                         "start": "18:00",
                         "duration": "60"
-                    },
-                    "except": ["2018-05-01"]
-                }
-            },
-            {
-                "name": "Ladies' Technique",
-                "level": "Open",
-                "tags": ["Salsa", "Ladies' Styling"],
-                "location": "Isonnevantie 16 B, Helsinki",
-                "teacher": "Hanna Still",
-                "schedule": {
+                    }
+                },
+                "except": ["2018-05-01"]
+            }
+        },
+        {
+            "name": "Ladies' Technique",
+            "level": "Open",
+            "tags": ["Salsa", "Ladies' Styling"],
+            "location": "Isonnevantie 16 B, Helsinki",
+            "teacher": "Hanna Still",
+            "schedule": {
+                "start": "2018-01-15",
+                "end": "2018-05-07",
+                "days": {
                     "mon": {
                         "start": "18:00",
                         "duration": "60"
-                    },
-                    "except": ["2018-03-05", "2018-04-30"]
-                }
-            },
-            {
-                "name": "Ladies' Show Team",
-                "level": "Open",
-                "tags": ["Salsa", "Ladies' Styling"],
-                "location": "Isonnevantie 16 B, Helsinki",
-                "teacher": "Hanna Still",
-                "schedule": {
+                    }
+                },
+                "except": ["2018-03-05", "2018-04-30"]
+            }
+        },
+        {
+            "name": "Ladies' Show Team",
+            "level": "Open",
+            "tags": ["Salsa", "Ladies' Styling"],
+            "location": "Isonnevantie 16 B, Helsinki",
+            "teacher": "Hanna Still",
+            "schedule": {
+                "start": "2018-02-04",
+                "end": "2018-05-13",
+                "days": {
                     "sun": {
                         "start": "15:00",
                         "duration": "60"
-                    },
-                    "except": []
-                }
-            },
-            {
-                "name": "Bachata Beginner",
-                "level": "Beginner",
-                "tags": ["Bachata"],
-                "location": "Isonnevantie 16 B, Helsinki",
-                "teacher": "Hanna Still",
-                "schedule": {
+                    }
+                },
+                "except": []
+            }
+        },
+        {
+            "name": "Bachata Beginner",
+            "level": "Beginner",
+            "tags": ["Bachata"],
+            "location": "Isonnevantie 16 B, Helsinki",
+            "teacher": "Hanna Still",
+            "schedule": {
+                "start": "2018-02-02",
+                "end": "2018-05-13",
+                "days": {
                     "sun": {
                         "start": "16:00",
                         "duration": "75"
-                    },
-                    "except": []
-                }
-            },
-            {
-                "name": "Bachata Improver",
-                "level": "Improver",
-                "tags": ["Bachata"],
-                "location": "Isonnevantie 16 B, Helsinki",
-                "teacher": "Hanna Still",
-                "schedule": {
+                    }
+                },
+                "except": []
+            }
+        },
+        {
+            "name": "Bachata Improver",
+            "level": "Improver",
+            "tags": ["Bachata"],
+            "location": "Isonnevantie 16 B, Helsinki",
+            "teacher": "Hanna Still",
+            "schedule": {
+                "start": "2018-02-02",
+                "end": "2018-05-13",
+                "days": {
                     "sun": {
                         "start": "17:15",
                         "duration": "75"
-                    },
-                    "except": []
-                }
+                    }
+                },
+                "except": []
             }
-        ]
-    }
+        }
+    ]
 }

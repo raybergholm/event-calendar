@@ -48,14 +48,40 @@ function generateSchedule(schools) {
 
 function buildEventsList(schools) {
     let events = schools.reduce((reducer, school) => {
-        let seasonStart = moment(school.season.start);
-        let seasonEnd = moment(school.season.end);
+        const dayParser = (dayString) => {
+            let day = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"].indexOf(dayString);
+            return day !== -1 ? day + 1 : null;
+        };
 
-        school.season.courses.forEach((course) => {
-            for(let date = seasonStart.clone(); date < seasonEnd; date = date.clone().add(7, "days")){ // date.add(7, "days") works too since it's a mutator, but let's make it obvious that there's an assignment
-                for(let day in course.schedule){
-                    let eventStart = date.clone().day(day);
-                    let eventEnd = eventStart.add(course.schedule[day].duration, "minutes");
+        const eventStartParser = (inputDate, day, occurrance) => {
+            const time = occurrance.start.split(":");
+            return inputDate.clone().isoWeekday(dayParser(day)).add(time[0], "hours").add(time[1], "minutes");
+        };
+
+        const eventEndParser = (inputDate, occurrance) => {
+            return inputDate.clone().add(occurrance.duration, "minutes");
+        };
+
+        const isExceptionDay = (date, exceptions) => {
+            return exceptions.some((exception) => date.isSame(moment(exception, "YYYY-MM-DD"), "day"));
+        };
+
+        school.courses.forEach((course) => {
+            const schedule = course.schedule;
+            let seasonStart = moment(schedule.start, "YYYY-MM-DD");
+            let seasonEnd = moment(schedule.end, "YYYY-MM-DD");
+
+            for(let date = seasonStart.clone(); date < seasonEnd; date = date.add(7, "days")){ // date.add(7, "days") works too since it's a mutator, but let's make it obvious that there's an assignment
+                for(let day in schedule.days){
+                    const occurrance = schedule.days[day];
+                    let eventStart = eventStartParser(date, day, occurrance);
+                    let eventEnd = eventEndParser(eventStart, occurrance);
+
+                    if(eventStart < seasonStart || eventStart > seasonEnd){
+                        continue;
+                    }else if(isExceptionDay(eventStart, schedule.except)){
+                        continue;
+                    }
 
                     reducer.push({
                         title: course.name,

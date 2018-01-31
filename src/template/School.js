@@ -1,4 +1,4 @@
-import Season from "./Season";
+import Course from "./Course";
 
 const School = (data = null) => {
     if (data) {
@@ -6,12 +6,11 @@ const School = (data = null) => {
             schoolName: data.schoolName || null,
             websiteUrl: data.websiteUrl || null,
             location: data.location || null,
-            season: new Season(data.season || null)
+            courses: data.courses ? data.courses.map((course) => new Course(course)) : null
         };
     } else {
         return null;
     }
-
 };
 
 export default School;
