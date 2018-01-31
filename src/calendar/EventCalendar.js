@@ -34,7 +34,7 @@ export const formatEvents = (input) => {
     return input.map((entry) => {
         return {
             id: entry.id,
-            name: entry.name,
+            title: entry.name,
             start: entry.start,
             end: entry.end,
             level: entry.level,
