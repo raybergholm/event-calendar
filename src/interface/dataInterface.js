@@ -30,11 +30,11 @@ const dataInterface = {
 
 function loadData (){
     let schools = importData();
-    let schedule = generateSchedule(schools);
+    let events = generateSchedule(schools);
 
     return {
         schools: schools,
-        schedule: schedule
+        events: events
     };
 }
 
