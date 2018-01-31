@@ -72,7 +72,7 @@ function buildEventsList(schools) {
     }, []);
 
     events.sort((left, right) => {
-        if(!left.start || !right.start || left.start.getTime() === right.start.getTime()){
+        if(!left || !left.start || !right || !right.start || left.start.getTime() === right.start.getTime()){
             return 0;
         }else if(left.start.getTime() < right.start.getTime()){
             return -1;
