@@ -13,6 +13,11 @@ import moment from "moment";
 
 // import endpoint from "./endpointConfig"; // TODO: do this later
 
+const data = [
+    // bailaBaila,
+    hsa
+];
+
 const dataInterface = {
     fetchEvents: () => {
         let data = loadData();
@@ -23,10 +28,8 @@ const dataInterface = {
     }
 };
 
-
 function loadData (){
     let schools = importData();
-
     let schedule = generateSchedule(schools);
 
     return {
@@ -36,13 +39,7 @@ function loadData (){
 }
 
 function importData() {
-    let data = [];
-
-    // data.push(new School(bailaBaila));
-
-    data.push(new School(hsa));
-
-    return data;
+    return data.map((entry) => new School(entry));
 }
 
 function generateSchedule(schools) {
@@ -50,12 +47,24 @@ function generateSchedule(schools) {
 }
 
 function buildEventsList(schools) {
-    schools.forEach((school) => {
-        let startDate = school.season.start;
-        let endDate = school.season.end;
+    schools.reduce((reducer, school) => {
+        let startDate = moment(school.season.start);
+        let endDate = moment(school.season.end);
 
-        
-    });
+        school.season.courses.forEach((course) => {
+            for(let date = startDate.clone(); date < endDate; date = date.add(7, "days")){
+                let event = {};
+                for(let day in course.schedule){
+                    let eventStart = date.clone().day(day);
+                    let eventEnd = eventStart.add(course.schedule[day].duration, "minutes");
+                }
+                
+                reducer.push(event);
+            }
+        });
+
+        return reducer;
+    }, []);
 }
 
 export default dataInterface;
