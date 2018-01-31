@@ -6,14 +6,11 @@ import EventCalendar, { formatEvents } from "./calendar/EventCalendar";
 import dataInterface from "./interface/dataInterface";
 
 let events;
-const rawEvents = dataInterface.fetchEvents();
-if(rawEvents){
-    events = formatEvents(rawEvents);
-}
+const data = dataInterface.fetchEvents();
 
 const App = () => (
     <EventCalendar 
-        events={events}
+        events={data ? formatEvents(data.events) : null}
         />
 );
 

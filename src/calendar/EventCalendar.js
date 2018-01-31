@@ -8,8 +8,6 @@ import AgendaViewEvent from "./AgendaViewEvent";
 
 import moment from "moment";
 
-import { correctTimezoneOffset } from "../utils/dateTimeUtils";
-
 BigCalendar.setLocalizer(
     BigCalendar.momentLocalizer(moment)
 );
@@ -33,19 +31,15 @@ const EventCalendar = ({ events }) => (
 );
 
 export const formatEvents = (input) => {
-    const formatDate = (inputDate) => {
-        return correctTimezoneOffset(inputDate).toDate();
-    };
-
     return input.map((entry) => {
         return {
             id: entry.id,
-            title: entry.name,
-            start: formatDate(entry.start_time),
-            end: formatDate(entry.end_time),
-            description: entry.description,
-            place: entry.place,
-            analysis: entry._bh
+            name: entry.name,
+            start: entry.start,
+            end: entry.end,
+            level: entry.level,
+            location: entry.location,
+            teacher: entry.teacher
         };
     });
 };

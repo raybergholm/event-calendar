@@ -1,11 +1,9 @@
 import React from "react";
 
 const MonthViewEvent = ({ event }) => (
-    <span>
-        <strong>{event.title}</strong>
-        {(event.analysis && event.analysis.type) && 
-            <p>{event.analysis.type.confidence}% {event.analysis.type.name}</p>
-        }
+    <span class={`course_level_${event.level}`}>
+        <strong>{event.name}</strong>
+        <p>{event.location}</p>
   </span>
 );
 

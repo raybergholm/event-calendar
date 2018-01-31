@@ -33,6 +33,26 @@
     min-height: 3rem;
 }
 
+.course_level_Novice {
+    color: green
+}
+
+.course_level_Beginner {
+    color: lightblue
+}
+
+.course_level_Improver {
+    color: orange
+}
+
+.course_level_Advanced {
+    color: red
+}
+
+.course_level_Open {
+    color: greenyellow
+}
+
 @keyframes App-logo-spin {
     from {
         transform: rotate(0deg);

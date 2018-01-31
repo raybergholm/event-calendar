@@ -24,7 +24,7 @@ const dataInterface = {
 
         console.log("loaded data:", data);
 
-        return eventsJson;
+        return data;
     }
 };
 
@@ -84,7 +84,7 @@ function buildEventsList(schools) {
                     }
 
                     reducer.push({
-                        title: course.name,
+                        name: course.name,
                         level: course.level,
                         location: course.location,
                         teacher: course.teacher,
