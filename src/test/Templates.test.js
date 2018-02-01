@@ -1,7 +1,5 @@
 import { describe, it } from "mocha";
-import chai from "chai";
-
-import assert from "assert";
+import { expect } from "chai";
 
 import Course from "../template/Course";
 import Schedule from "../template/Schedule";
@@ -10,19 +8,19 @@ import School from "../template/School";
 describe("Template tests", () => {
     describe("Course", () => {
         it("No input data should return null", () => {
-            assert.equal(new Course(), null);
+            expect(new Course()).to.equal(null);
         });
     });
 
     describe("Schedule", () => {
         it("No input data should return null", () => {
-            assert.equal(new Schedule(), null);
+            expect(new Schedule()).to.equal(null);
         });
     });
 
     describe("School", () => {
         it("No input data should return null", () => {
-            assert.equal(new School(), null);
+            expect(new School()).to.equal(null);
         });
     });
 });

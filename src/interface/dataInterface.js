@@ -1,11 +1,4 @@
-import mockEvents from "../mock/mockEvents";
-
-import eventsJson from "../mock/events.json";
-
-
-
 import School from "../template/School";
-import Schedule from "../template/Schedule";
 
 import moment from "moment";
 
